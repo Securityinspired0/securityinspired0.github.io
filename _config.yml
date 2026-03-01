@@ -1,0 +1,177 @@
+# =============================================================================
+# THEME
+# =============================================================================
+remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "dark"   # skins: default, air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
+
+# =============================================================================
+# SITE SETTINGS
+# =============================================================================
+title                    : "Security Inspired"
+title_separator          : "-"
+subtitle                 : "Labs · Research · Advisory"
+name                     : "Oluwatosin Adesanya"
+description              : "Hands-on security labs, technical write-ups, and advisory content by Oluwatosin Adesanya."
+url                      : "https://securityinspired.com"
+baseurl                  : ""
+repository               : "Securityinspired0/securityinspired0.github.io"
+logo                     : # path to a logo image e.g. "/assets/images/logo.png"
+masthead_title           : "Security Inspired"
+
+# =============================================================================
+# SITE AUTHOR (sidebar profile)
+# =============================================================================
+author:
+  name                   : "Oluwatosin Adesanya"
+  avatar                 : "/assets/images/bio-photo.jpg"  # upload your photo here later
+  bio                    : "Security professional exploring labs, research, and advisory."
+  location               : # e.g. "United Kingdom"
+  links:
+    - label              : "LinkedIn"
+      icon               : "fab fa-fw fa-linkedin"
+      url                : "https://linkedin.com/in/adesco"
+    - label              : "GitHub"
+      icon               : "fab fa-fw fa-github"
+      url                : "https://github.com/securityinspired0"
+
+# =============================================================================
+# SITE FOOTER
+# =============================================================================
+footer:
+  links:
+    - label              : "LinkedIn"
+      icon               : "fab fa-fw fa-linkedin"
+      url                : "https://linkedin.com/in/adesco"
+    - label              : "GitHub"
+      icon               : "fab fa-fw fa-github"
+      url                : "https://github.com/securityinspired0"
+
+# =============================================================================
+# READING FILES
+# =============================================================================
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - docs       # exclude Minimal Mistakes demo content
+  - test       # exclude Minimal Mistakes test content
+keep_files:
+  - .git
+encoding                 : "utf-8"
+markdown_ext             : "markdown,mkdown,mkdn,mkd,md"
+
+# =============================================================================
+# CONVERSION & MARKDOWN
+# =============================================================================
+markdown                 : kramdown
+highlighter              : rouge
+lsi                      : false
+excerpt_separator        : "\n\n"
+incremental              : false
+
+kramdown:
+  input                  : GFM
+  hard_wrap              : false
+  auto_ids               : true
+  footnote_nr            : 1
+  entity_output          : as_char
+  toc_levels             : 1..6
+  smart_quotes           : lsquo,rsquo,ldquo,rdquo
+  enable_coderay         : false
+
+# =============================================================================
+# SASS
+# =============================================================================
+sass:
+  sass_dir               : _sass
+  style                  : compressed
+
+# =============================================================================
+# OUTPUTTING
+# =============================================================================
+permalink                : /:categories/:title/
+paginate                 : 10
+paginate_path            : /page:num/
+timezone                 : "Europe/London"
+
+# =============================================================================
+# PLUGINS
+# =============================================================================
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# =============================================================================
+# ARCHIVES
+# =============================================================================
+category_archive:
+  type                   : liquid
+  path                   : /categories/
+tag_archive:
+  type                   : liquid
+  path                   : /tags/
+
+# =============================================================================
+# HTML COMPRESSION
+# =============================================================================
+compress_html:
+  clippings              : all
+  ignore:
+    envs                 : development
+
+# =============================================================================
+# DEFAULTS
+# =============================================================================
+defaults:
+  # ALL POSTS
+  - scope:
+      path               : ""
+      type               : posts
+    values:
+      layout             : single
+      author_profile     : true
+      read_time          : true
+      comments           : false
+      share              : true
+      related            : true
+      toc                : true
+      toc_sticky         : true
+      toc_label          : "On this page"
+
+  # ALL PAGES
+  - scope:
+      path               : "_pages"
+      type               : pages
+    values:
+      layout             : single
+      author_profile     : true
