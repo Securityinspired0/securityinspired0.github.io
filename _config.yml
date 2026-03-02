@@ -9,7 +9,6 @@ minimal_mistakes_skin    : "dark"   # skins: default, air, aqua, contrast, dark,
 # =============================================================================
 title                    : "Security Inspired"
 title_separator          : "-"
-subtitle                 : "Labs · Research · Advisory"
 name                     : "Oluwatosin Adesanya"
 description              : "Hands-on security labs, technical write-ups, and advisory content by Oluwatosin Adesanya."
 url                      : "https://securityinspired.com"
