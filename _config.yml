@@ -28,7 +28,7 @@ author:
   links:
     - label              : "Email"
       icon               : "fas fa-fw fa-envelope"
-      url                : "mailto:youremail@example.com"  # replace with your email
+      url                : "mailto:adesco@securityinspired.com"  # replace with your email
     - label              : "LinkedIn"
       icon               : "fab fa-fw fa-linkedin"
       url                : "https://linkedin.com/in/adesco"
