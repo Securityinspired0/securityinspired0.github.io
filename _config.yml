@@ -7,7 +7,7 @@ minimal_mistakes_skin    : "dark"
 # =============================================================================
 # SITE SETTINGS
 # =============================================================================
-title                    : "Security Inspired"
+title                    : "Oluwatosin Adesanya"
 title_separator          : "-"
 subtitle                 :
 name                     : "Oluwatosin Adesanya"
@@ -15,7 +15,7 @@ description              : "Hands-on security labs, technical write-ups, and adv
 url                      : "https://securityinspired.com"
 baseurl                  : ""
 repository               : "Securityinspired0/securityinspired0.github.io"
-masthead_title           : "Security Inspired"
+masthead_title           : "Oluwatosin Adesanya"
 
 # =============================================================================
 # SITE AUTHOR (sidebar profile)
