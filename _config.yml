@@ -23,7 +23,7 @@ masthead_title           : "Oluwatosin Adesanya"
 author:
   name                   : "Oluwatosin Adesanya"
   avatar                 : "/assets/images/bio-photo.jpg"
-  bio                    : "I like to break into things — and document every step of the way."
+  bio                    : "I’m a cybersecurity analyst passionate about understanding how attacks happen — and how to stop them. From building SIEM pipelines to investigating alerts across multi-endpoint environments, I enjoy the technical depth and constant learning security demands."
   location               : "United Kingdom"
   links:
     - label              : "Email"
