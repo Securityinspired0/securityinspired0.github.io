@@ -1,6 +1,6 @@
 ---
 title: "MITRE ATT&CK: The Cheat Sheet That Makes You a Better Defender"
-date: 2024-11-29
+date: 2026-03-07
 categories:
   - blog
 tags:
