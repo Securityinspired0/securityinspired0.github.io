@@ -2,7 +2,7 @@
 title: "Setting Up Active Directory in a Home Lab"
 date: 2026-04-24
 categories:
-  - Home Lab
+  - labs
 tags:
   - Active Directory
   - Windows Server
