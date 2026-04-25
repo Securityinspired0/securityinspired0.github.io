@@ -2,7 +2,7 @@
 title: "How I Built My Cybersecurity Home Lab from Scratch"
 date: 2026-04-19
 categories:
-  - Labs
+  - labs
 tags:
   - VirtualBox
   - Windows Server
