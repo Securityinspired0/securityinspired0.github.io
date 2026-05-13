@@ -376,4 +376,4 @@ The four scenarios covered here are not contrived edge cases — they are the ki
 
 That is the habit this week was about building.
 
-*Week 4 moves into Microsoft 365 — setting up the environment and exploring how cloud identity integrates with the on-premises Active Directory built in these first three weeks.*
+*Week 4 moves into Exchange Online and Intune — setting up mailboxes, enrolling a device, and troubleshooting a user who cannot access email from their device*
