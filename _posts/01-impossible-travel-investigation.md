@@ -1,14 +1,18 @@
 ---
 title: "SOC Investigation 01: Impossible Travel"
-category: SOC Investigation Portfolio
-tags: [Microsoft Sentinel, KQL, Entra ID, Conditional Access, Identity]
+category: labs
+tags: - Microsoft Sentinel
+      - KQL
+      - Entra Id
+      - Conditional Access
+      - Identity
 ---
 
 # SOC Investigation 01: Impossible Travel
 
 ## Alert
 
-Sign-in activity for a single tenant account (`adesco@securityinspired0.onmicrosoft.com`) was reviewed in Microsoft Sentinel against the `SigninLogs` table. The activity showed successful authentications from two geographically distant locations within a time window too short for legitimate travel: a sign-in from Great Britain followed by a sign-in from the Netherlands 5 minutes and 20 seconds later, and on a separate occasion, a sign-in from Great Britain followed by one from Canada within under 3 minutes. Both locations reverted back to Great Britain shortly after, producing the same impossible gap in reverse.
+Sign-in activity for a single tenant account (`@securityinspired0.onmicrosoft.com`) was reviewed in Microsoft Sentinel against the `SigninLogs` table. The activity showed successful authentications from two geographically distant locations within a time window too short for legitimate travel: a sign-in from Great Britain followed by a sign-in from the Netherlands 5 minutes and 20 seconds later, and on a separate occasion, a sign-in from Great Britain followed by one from Canada within under 3 minutes. Both locations reverted back to Great Britain shortly after, producing the same impossible gap in reverse.
 
 This pattern was surfaced by querying successful sign-ins over a rolling window and reviewing timestamp, location, and IP address for the account, rather than through a pre-built Sentinel analytics rule.
 
@@ -31,7 +35,7 @@ To confirm the pattern was genuine and not a logging artefact, sign-in events we
 ```kql
 SigninLogs
 | where TimeGenerated > ago(7d)
-| where UserPrincipalName == "adesco@securityinspired0.onmicrosoft.com"
+| where UserPrincipalName == "@securityinspired0.onmicrosoft.com"
 | where ResultType == 0
 | project TimeGenerated, Location, IPAddress, AppDisplayName, AuthenticationRequirement, ConditionalAccessStatus
 | order by TimeGenerated asc
