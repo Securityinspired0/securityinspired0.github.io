@@ -1,11 +1,12 @@
 ---
 title: "SOC Investigation 01: Impossible Travel"
 category: labs
-tags: - Microsoft Sentinel
-      - KQL
-      - Entra Id
-      - Conditional Access
-      - Identity
+tags: 
+  - Microsoft Sentinel
+  - KQL
+  - Entra Id
+  - Conditional Access
+  - Identity
 ---
 
 # SOC Investigation 01: Impossible Travel
